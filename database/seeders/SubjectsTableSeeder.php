@@ -23,8 +23,8 @@ class SubjectsTableSeeder extends Seeder
 
     protected function createSubjects()
     {
-        $subjects = ['English Language', 'Mathematics'];
-        $sub_slug = ['Eng', 'Math'];
+        $subjects = ['English Language', 'Mathematics' , 'Programmers', 'Science', 'History', 'Geography', 'Art', 'Physical Education', 'Music', 'Computer Science'];
+        $sub_slug = ['Eng', 'Math', 'Prog', 'Sci', 'Hist', 'Geo', 'Art', 'PE', 'Music', 'CS'];
         $teacher_id = User::where(['user_type' => 'teacher'])->first()->id;
         $my_classes = MyClass::all();
 

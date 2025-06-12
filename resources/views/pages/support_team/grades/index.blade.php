@@ -9,10 +9,48 @@
         </div>
 
         <div class="card-body">
-            <ul class="nav nav-tabs nav-tabs-highlight">
+            {{-- <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#all-grades" class="nav-link active" data-toggle="tab">Manage Grades</a></li>
                 <li class="nav-item"><a href="#new-grade" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Add Grade</a></li>
-            </ul>
+            </ul> --}}
+<!-- Font Awesome (if not already included) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<ul class="nav nav-tabs nav-tabs-highlight" style="border-bottom: none; display: flex; gap: 12px;">
+
+  <!-- Manage Grades Tab -->
+  <li class="nav-item">
+    <a href="#all-grades" class="nav-link active" data-toggle="tab"
+       style="display: inline-flex; align-items: center; gap: 8px;
+              color: #1a1a1a; background: #f3f6ff; border: 3px solid #3b82f6;
+              border-radius: 8px 8px 0 0; padding: 10px 20px; font-weight: 600;
+              box-shadow: 0 6px 0 #1e40af, 0 6px 15px rgba(59, 130, 246, 0.4);
+              cursor: pointer; user-select: none; transition: all 0.2s ease;"
+       onmouseover="this.style.background='#e0eaff'; this.style.boxShadow='0 4px 0 #1e40af, 0 4px 12px rgba(59, 130, 246, 0.3)'"
+       onmouseout="this.style.background='#f3f6ff'; this.style.boxShadow='0 6px 0 #1e40af, 0 6px 15px rgba(59, 130, 246, 0.4)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #1e40af, 0 2px 8px rgba(59, 130, 246, 0.2)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #1e40af, 0 4px 12px rgba(59, 130, 246, 0.3)'">
+      <i class="fa-solid fa-chart-line"></i> Manage Grades
+    </a>
+  </li>
+
+  <!-- Add Grade Tab -->
+  <li class="nav-item">
+    <a href="#new-grade" class="nav-link" data-toggle="tab"
+       style="display: inline-flex; align-items: center; gap: 8px;
+              color: #1b5e20; background: #ecfdf5; border: 3px solid #10b981;
+              border-radius: 8px 8px 0 0; padding: 10px 20px; font-weight: 600;
+              box-shadow: 0 6px 0 #047857, 0 6px 15px rgba(16, 185, 129, 0.3);
+              cursor: pointer; user-select: none; transition: all 0.2s ease;"
+       onmouseover="this.style.background='#d1fae5'; this.style.boxShadow='0 4px 0 #047857, 0 4px 12px rgba(16, 185, 129, 0.3)'"
+       onmouseout="this.style.background='#ecfdf5'; this.style.boxShadow='0 6px 0 #047857, 0 6px 15px rgba(16, 185, 129, 0.3)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #047857, 0 2px 8px rgba(16, 185, 129, 0.2)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #047857, 0 4px 12px rgba(16, 185, 129, 0.3)'">
+      <i class="fa-solid fa-plus"></i> Add Grade
+    </a>
+  </li>
+
+</ul>
 
             <div class="tab-content">
                     <div class="tab-pane fade show active" id="all-grades">

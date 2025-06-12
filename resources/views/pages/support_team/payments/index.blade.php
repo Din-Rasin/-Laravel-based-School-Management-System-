@@ -25,11 +25,35 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 mt-4">
+                            {{-- <div class="col-md-2 mt-4">
                                 <div class="text-right mt-1">
                                     <button type="submit" class="btn btn-primary">Submit <i class="icon-paperplane ml-2"></i></button>
                                 </div>
-                            </div>
+                            </div> --}}
+
+                                                             <div class="col-md-2 mt-4">
+                                   <div class="text-right mt-1">
+                                     <button type="submit" class="btn btn-primary"
+                                       style="
+                                         border: 2px solid #007bff;
+                                         border-radius: 5px;
+                                         padding: 10px 18px;
+                                         font-weight: bold;
+                                         background-color: #007bff;
+                                         color: white;
+                                         transition: all 0.2s ease;
+                                         box-shadow: 0 6px 0 #0056b3, 0 6px 15px rgba(0, 0, 0, 0.2);
+                                         cursor: pointer;"
+                                       onmouseover="this.style.boxShadow='0 4px 0 #0056b3, 0 4px 12px rgba(0, 0, 0, 0.15)'"
+                                       onmouseout="this.style.boxShadow='0 6px 0 #0056b3, 0 6px 15px rgba(0, 0, 0, 0.2)'"
+                                       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #0056b3, 0 2px 8px rgba(0, 0, 0, 0.1)'"
+                                       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #0056b3, 0 4px 12px rgba(0, 0, 0, 0.15)'"
+                                     >
+                                       Submit <i class="icon-paperplane ml-2"></i>
+                                     </button>
+                                   </div>
+                                 </div>
+
 
                         </div>
                     </div>

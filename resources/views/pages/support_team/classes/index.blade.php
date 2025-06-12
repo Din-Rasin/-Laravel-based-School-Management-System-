@@ -9,10 +9,62 @@
         </div>
 
         <div class="card-body">
-            <ul class="nav nav-tabs nav-tabs-highlight">
+            {{-- <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#all-classes" class="nav-link active" data-toggle="tab">Manage Classes</a></li>
                 <li class="nav-item"><a href="#new-class" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Create New Class</a></li>
-            </ul>
+            </ul> --}}
+            <!-- 3D Tab Styles with Icon Support -->
+<style>
+    .nav-tabs-highlight .nav-link {
+        color: rgb(255, 0, 0);
+        font-weight: 600;
+        border: 2px solid #4a90e2;
+        border-radius: 8px;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: white;
+        box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .nav-tabs-highlight .nav-link:hover {
+        background-color: #eaf4ff;
+        box-shadow: 0 4px 0 #357ABD, 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .nav-tabs-highlight .nav-link:active {
+        transform: translateY(3px);
+        box-shadow: 0 2px 0 #357ABD, 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-tabs-highlight .nav-link.active {
+        background-color: #dceeff;
+        font-weight: bold;
+        box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-tabs-highlight .nav-link i {
+        margin-right: 6px;
+    }
+</style>
+
+<!-- Updated Nav Tabs with Icons -->
+<ul class="nav nav-tabs nav-tabs-highlight">
+    <li class="nav-item">
+        <a href="#all-classes" class="nav-link active" data-toggle="tab">
+            <i class="icon-grid52"></i> Manage Classes
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="#new-class" class="nav-link" data-toggle="tab">
+            <i class="icon-plus2"></i> Create New Class
+        </a>
+    </li>
+</ul>
+
 
             <div class="tab-content">
                     <div class="tab-pane fade show active" id="all-classes">
@@ -92,9 +144,52 @@
                                     </div>
                                 </div>
 
-                                <div class="text-right">
+                                {{-- <div class="text-right">
                                     <button id="ajax-btn" type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
-                                </div>
+                                </div> --}}
+
+                                <!-- 3D Button Styles -->
+<style>
+    .btn-3d {
+        background-color: #007bff;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        box-shadow: 0 6px 0 #0056b3, 0 6px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-in-out;
+        position: relative;
+    }
+
+    .btn-3d i {
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-3d:hover {
+        background-color: #0056b3;
+        box-shadow: 0 4px 0 #003f88, 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-1px);
+    }
+
+    .btn-3d:active {
+        transform: translateY(3px);
+        box-shadow: 0 2px 0 #003f88, 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-3d:hover i {
+        transform: translateX(3px);
+    }
+</style>
+
+<!-- Submit Button HTML -->
+<div class="text-right">
+    <button id="ajax-btn" type="submit" class="btn btn-3d">
+        Submit form <i class="icon-paperplane"></i>
+    </button>
+</div>
+
                             </form>
                         </div>
                     </div>

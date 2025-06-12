@@ -9,12 +9,56 @@
         </div>
 
         <div class="card-body">
-            <ul class="nav nav-tabs nav-tabs-highlight">
-                <li class="nav-item"><a href="#change-pass" class="nav-link active" data-toggle="tab">Change Password</a></li>
-                @if(Qs::userIsPTA())
-                    <li class="nav-item"><a href="#edit-profile" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Manage Profile</a></li>
-                @endif
-            </ul>
+          <ul class="nav nav-tabs nav-tabs-highlight">
+
+  <li class="nav-item">
+    <a href="#change-pass" class="nav-link active"
+       data-toggle="tab"
+       style="
+         color: red;
+         border: 2px solid red;
+         border-radius: 5px;
+         padding: 8px 12px;
+         background-color: #fff;
+         transition: all 0.2s ease;
+         box-shadow: 0 6px 0 #b30000, 0 6px 15px rgba(0, 0, 0, 0.2);
+         display: inline-block;
+         text-decoration: none;
+         font-weight: bold;"
+       onmouseover="this.style.boxShadow='0 4px 0 #b30000, 0 4px 12px rgba(0, 0, 0, 0.15)'"
+       onmouseout="this.style.boxShadow='0 6px 0 #b30000, 0 6px 15px rgba(0, 0, 0, 0.2)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #b30000, 0 2px 8px rgba(0, 0, 0, 0.1)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #b30000, 0 4px 12px rgba(0, 0, 0, 0.15)'">
+      <i class="icon-lock2"></i> Change Password
+    </a>
+  </li>
+
+  @if(Qs::userIsPTA())
+  <li class="nav-item">
+    <a href="#edit-profile" class="nav-link"
+       data-toggle="tab"
+       style="
+         color: #4a90e2;
+         border: 2px solid #4a90e2;
+         border-radius: 5px;
+         padding: 8px 12px;
+         background-color: #fff;
+         transition: all 0.2s ease;
+         box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.2);
+         display: inline-block;
+         text-decoration: none;
+         font-weight: bold;"
+       onmouseover="this.style.boxShadow='0 4px 0 #357ABD, 0 4px 12px rgba(0, 0, 0, 0.15)'"
+       onmouseout="this.style.boxShadow='0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.2)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #357ABD, 0 2px 8px rgba(0, 0, 0, 0.1)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #357ABD, 0 4px 12px rgba(0, 0, 0, 0.15)'">
+      <i class="icon-plus2"></i> Manage Profile
+    </a>
+  </li>
+  @endif
+
+</ul>
+
 
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="change-pass">

@@ -9,10 +9,76 @@
         </div>
 
         <div class="card-body">
+            {{-- <style>
+
+            </style>
             <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#all-dorms" class="nav-link active" data-toggle="tab">Manage Dorms</a></li>
                 <li class="nav-item"><a href="#new-dorm" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Create New Dorm</a></li>
-            </ul>
+            </ul> --}}
+<style>
+  /* Base style for nav links */
+  .nav-tabs-highlight .nav-link {
+    color: #4a90e2;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 600;
+    transition:
+      box-shadow 0.3s ease,
+      border-color 0.3s ease,
+      transform 0.15s ease;
+    cursor: pointer;
+    perspective: 500px; /* for 3D effect */
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Icon spacing */
+  .nav-tabs-highlight .nav-link i {
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Hover effect */
+  .nav-tabs-highlight .nav-link:hover:not(.active) {
+    border-color: #4a90e2;
+    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.4);
+    transform: translateZ(10px) rotateX(5deg);
+  }
+
+  /* Active tab style */
+  .nav-tabs-highlight .nav-link.active {
+    color: white;
+    background: #4a90e2;
+    border-color: #357ABD;
+    box-shadow: 0 8px 18px rgba(53, 122, 189, 0.6);
+    transform: translateZ(12px);
+  }
+
+  /* Press effect when clicking */
+  .nav-tabs-highlight .nav-link:active {
+    transform: translateZ(0) translateY(4px);
+    box-shadow: 0 3px 6px rgba(53, 122, 189, 0.4);
+    transition: none;
+  }
+
+  /* Icon animation on hover */
+  .nav-tabs-highlight .nav-link:hover i {
+    transform: rotate(20deg) scale(1.2);
+  }
+</style>
+
+<ul class="nav nav-tabs nav-tabs-highlight">
+  <li class="nav-item">
+    <a href="#all-dorms" class="nav-link active" data-toggle="tab">Manage Dorms</a>
+  </li>
+  <li class="nav-item">
+    <a href="#new-dorm" class="nav-link" data-toggle="tab">
+      <i class="icon-plus2"></i> Create New Dorm
+    </a>
+  </li>
+</ul>
 
             <div class="tab-content">
                     <div class="tab-pane fade show active" id="all-dorms">

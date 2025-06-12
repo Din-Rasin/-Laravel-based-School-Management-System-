@@ -9,10 +9,52 @@
         </div>
 
         <div class="card-body">
-            <ul class="nav nav-tabs nav-tabs-highlight">
+            {{-- <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#all-exams" class="nav-link active" data-toggle="tab">Manage Exam</a></li>
                 <li class="nav-item"><a href="#new-exam" class="nav-link" data-toggle="tab"><i class="icon-plus2"></i> Add Exam</a></li>
-            </ul>
+            </ul> --}}
+
+
+
+
+            <!-- Font Awesome (optional if not already loaded) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<ul class="nav nav-tabs nav-tabs-highlight" style="border-bottom: none; display: flex; gap: 12px;">
+
+  <!-- Manage Exam -->
+  <li class="nav-item">
+    <a href="#all-exams" class="nav-link active" data-toggle="tab"
+       style="display: inline-flex; align-items: center; gap: 8px;
+              color: #222; background: #f0f4ff; border: 3px solid #4a90e2;
+              border-radius: 8px 8px 0 0; padding: 10px 20px; font-weight: 600;
+              box-shadow: 0 6px 0 #2e5cb8, 0 6px 15px rgba(46, 92, 184, 0.4);
+              cursor: pointer; user-select: none; transition: all 0.2s ease;"
+       onmouseover="this.style.background='#d6e1ff'; this.style.boxShadow='0 4px 0 #2e5cb8, 0 4px 12px rgba(46, 92, 184, 0.3)'"
+       onmouseout="this.style.background='#f0f4ff'; this.style.boxShadow='0 6px 0 #2e5cb8, 0 6px 15px rgba(46, 92, 184, 0.4)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #2e5cb8, 0 2px 8px rgba(46, 92, 184, 0.2)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #2e5cb8, 0 4px 12px rgba(46, 92, 184, 0.3)'">
+      <i class="fa-solid fa-file-lines"></i> Manage Exam
+    </a>
+  </li>
+
+  <!-- Add Exam -->
+  <li class="nav-item">
+    <a href="#new-exam" class="nav-link" data-toggle="tab"
+       style="display: inline-flex; align-items: center; gap: 8px;
+              color: #007b5e; background: #e8fff3; border: 3px solid #28a745;
+              border-radius: 8px 8px 0 0; padding: 10px 20px; font-weight: 600;
+              box-shadow: 0 6px 0 #218838, 0 6px 15px rgba(40, 167, 69, 0.3);
+              cursor: pointer; user-select: none; transition: all 0.2s ease;"
+       onmouseover="this.style.background='#ccf2e0'; this.style.boxShadow='0 4px 0 #218838, 0 4px 12px rgba(40, 167, 69, 0.2)'"
+       onmouseout="this.style.background='#e8fff3'; this.style.boxShadow='0 6px 0 #218838, 0 6px 15px rgba(40, 167, 69, 0.3)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #218838, 0 2px 8px rgba(40, 167, 69, 0.2)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #218838, 0 4px 12px rgba(40, 167, 69, 0.2)'">
+      <i class="fa-solid fa-plus"></i> Add Exam
+    </a>
+  </li>
+
+</ul>
 
             <div class="tab-content">
                     <div class="tab-pane fade show active" id="all-exams">

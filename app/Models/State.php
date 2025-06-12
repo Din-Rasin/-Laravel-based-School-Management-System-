@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
-use Eloquent;
+use Illuminate\Database\Eloquent\Model;
 
-class State extends Eloquent
+class State extends Model
 {
+    protected $fillable = ['name'];
+
+    // If you need the ministry relationship later
     public function ministry()
     {
-       // return $this->hasMany(Ministry::class);
+        // return $this->hasMany(Ministry::class);
     }
 }

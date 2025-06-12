@@ -7,18 +7,40 @@ use Illuminate\Support\Facades\DB;
 
 class StatesTableSeeder extends Seeder
 {
-
     public function run()
     {
         DB::table('states')->delete();
 
-        $states = [
-            'Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa', 'Benue', 'Borno', 'Cross River', 'Delta', 'Ebonyi', 'Edo', 'Ekiti', 'Enugu', 'FCT', 'Gombe', 'Imo', 'Jigawa','Kaduna', 'Kano', 'Katsina', 'Kebbi', 'Kogi', 'Kwara', 'Lagos', 'Nasarawa', 'Niger', 'Ogun', 'Ondo', 'Osun', 'Oyo', 'Plateau', 'Rivers', 'Sokoto', 'Taraba', 'Yobe', 'Zamfara',
+        $provinces = [
+            'Banteay Meanchey',
+            'Battambang',
+            'Kampong Cham',
+            'Kampong Chhnang',
+            'Kampong Speu',
+            'Kampong Thom',
+            'Kampot',
+            'Kandal',
+            'Kep',
+            'Koh Kong',
+            'Kratie',
+            'Mondulkiri',
+            'Oddar Meanchey',
+            'Pailin',
+            'Phnom Penh', // Capital (treated as a province)
+            'Preah Sihanouk',
+            'Preah Vihear',
+            'Pursat',
+            'Prey Veng',
+            'Ratanakiri',
+            'Siem Reap',
+            'Stung Treng',
+            'Svay Rieng',
+            'Takeo',
+            'Tboung Khmum',
         ];
 
-        foreach ($states as $state) {
-            State::create(['name' => $state]);
+        foreach ($provinces as $province) {
+            State::create(['name' => $province]);
         }
     }
-
 }

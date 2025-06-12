@@ -9,10 +9,48 @@
         </div>
 
         <div class="card-body">
-                <ul class="nav nav-tabs nav-tabs-highlight">
+                {{-- <ul class="nav nav-tabs nav-tabs-highlight">
                     <li class="nav-item"><a href="#all-uc" class="nav-link active" data-toggle="tab">Incomplete Payments</a></li>
                     <li class="nav-item"><a href="#all-cl" class="nav-link" data-toggle="tab">Completed Payments</a></li>
-                </ul>
+                </ul> --}}
+       <!-- Font Awesome CDN (if not included already) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<ul class="nav nav-tabs nav-tabs-highlight" style="border-bottom: none; display: flex; gap: 12px;">
+
+  <!-- Incomplete Payments Tab -->
+  <li class="nav-item">
+    <a href="#all-uc" class="nav-link active" data-toggle="tab"
+       style="display: inline-flex; align-items: center; gap: 8px;
+              color: #b91c1c; background: #fef2f2; border: 3px solid #ef4444;
+              border-radius: 8px 8px 0 0; padding: 10px 20px; font-weight: 600;
+              box-shadow: 0 6px 0 #991b1b, 0 6px 15px rgba(239, 68, 68, 0.3);
+              cursor: pointer; transition: all 0.2s ease;"
+       onmouseover="this.style.background='#fee2e2'; this.style.boxShadow='0 4px 0 #991b1b, 0 4px 12px rgba(239, 68, 68, 0.3)'"
+       onmouseout="this.style.background='#fef2f2'; this.style.boxShadow='0 6px 0 #991b1b, 0 6px 15px rgba(239, 68, 68, 0.3)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #991b1b, 0 2px 8px rgba(239, 68, 68, 0.2)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #991b1b, 0 4px 12px rgba(239, 68, 68, 0.3)'">
+      <i class="fa-solid fa-exclamation-circle"></i> Incomplete Payments
+    </a>
+  </li>
+
+  <!-- Completed Payments Tab -->
+  <li class="nav-item">
+    <a href="#all-cl" class="nav-link" data-toggle="tab"
+       style="display: inline-flex; align-items: center; gap: 8px;
+              color: #065f46; background: #ecfdf5; border: 3px solid #10b981;
+              border-radius: 8px 8px 0 0; padding: 10px 20px; font-weight: 600;
+              box-shadow: 0 6px 0 #047857, 0 6px 15px rgba(16, 185, 129, 0.3);
+              cursor: pointer; transition: all 0.2s ease;"
+       onmouseover="this.style.background='#d1fae5'; this.style.boxShadow='0 4px 0 #047857, 0 4px 12px rgba(16, 185, 129, 0.3)'"
+       onmouseout="this.style.background='#ecfdf5'; this.style.boxShadow='0 6px 0 #047857, 0 6px 15px rgba(16, 185, 129, 0.3)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #047857, 0 2px 8px rgba(16, 185, 129, 0.2)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #047857, 0 4px 12px rgba(16, 185, 129, 0.3)'">
+      <i class="fa-solid fa-check-circle"></i> Completed Payments
+    </a>
+  </li>
+
+</ul>
 
         <div class="tab-content">
             <div class="tab-pane fade show active" id="all-uc">

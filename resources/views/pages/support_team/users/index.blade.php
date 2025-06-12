@@ -9,7 +9,7 @@
         </div>
 
         <div class="card-body">
-            <ul class="nav nav-tabs nav-tabs-highlight">
+            {{-- <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#new-user" class="nav-link active" data-toggle="tab">Create New User</a></li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manage Users</a>
@@ -19,7 +19,172 @@
                         @endforeach
                     </div>
                 </li>
-            </ul>
+            </ul> --}}
+
+            {{-- <style>
+    .nav-tabs-highlight .nav-link {
+        color: #ff0000;
+        font-weight: 600;
+        border: 2px solid #4a90e2;
+        border-radius: 8px;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: white;
+        box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    .nav-tabs-highlight .nav-link:hover {
+        background-color: #eaf4ff;
+        box-shadow: 0 4px 0 #357ABD, 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .nav-tabs-highlight .nav-link:active {
+        transform: translateY(3px);
+        box-shadow: 0 2px 0 #357ABD, 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-tabs-highlight .dropdown-menu {
+        animation: fadeInScale 0.3s ease-in-out;
+        border-radius: 8px;
+        padding: 10px 0;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-tabs-highlight .dropdown-item {
+        padding: 10px 20px;
+        transition: background 0.3s ease, transform 0.2s ease;
+        border-radius: 6px;
+    }
+
+    .nav-tabs-highlight .dropdown-item:hover {
+        background-color: #f0f8ff;
+        transform: translateX(5px);
+    }
+
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+
+<ul class="nav nav-tabs nav-tabs-highlight">
+  <!-- 3D CSS Styling -->
+<style>
+    .nav-tabs-highlight .nav-link {
+        color: #e24a4a;
+        font-weight: 600;
+        border: 2px solid #4a90e2;
+        border-radius: 8px;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: white;
+        box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .nav-tabs-highlight .nav-link:hover {
+        background-color: #eaf4ff;
+        box-shadow: 0 4px 0 #357ABD, 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .nav-tabs-highlight .nav-link:active {
+        transform: translateY(3px);
+        box-shadow: 0 2px 0 #357ABD, 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-tabs-highlight .nav-link.active {
+        background-color: #dceeff;
+        font-weight: bold;
+        box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
+<!-- Nav Tabs -->
+<ul class="nav nav-tabs nav-tabs-highlight">
+    <li class="nav-item">
+        <a href="#new-user" class="nav-link active" data-toggle="tab">
+            Create New User
+        </a>
+    </li>
+</ul>
+
+    <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            Manage Users
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+            @foreach($user_types as $ut)
+                <a href="#ut-{{ Qs::hash($ut->id) }}" class="dropdown-item" data-toggle="tab">
+                    {{ $ut->name }}s
+                </a>
+            @endforeach
+        </div>
+    </li>
+</ul> --}}
+<!-- 3D CSS Styling -->
+<style>
+    .nav-tabs-highlight .nav-link {
+        color: #e24a4a;
+        font-weight: 600;
+        border: 2px solid #4a90e2;
+        border-radius: 8px;
+        padding: 8px 16px;
+        margin-right: 8px;
+        background-color: white;
+        box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .nav-tabs-highlight .nav-link:hover {
+        background-color: #eaf4ff;
+        box-shadow: 0 4px 0 #357ABD, 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .nav-tabs-highlight .nav-link:active {
+        transform: translateY(3px);
+        box-shadow: 0 2px 0 #357ABD, 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-tabs-highlight .nav-link.active {
+        background-color: #dceeff;
+        font-weight: bold;
+        box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
+<!-- Nav Tabs -->
+<ul class="nav nav-tabs nav-tabs-highlight">
+    <li class="nav-item">
+        <a href="#new-user" class="nav-link active" data-toggle="tab">Create New User</a>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Manage Users</a>
+        <div class="dropdown-menu dropdown-menu-right">
+            @foreach($user_types as $ut)
+                <a href="#ut-{{ Qs::hash($ut->id) }}" class="dropdown-item" data-toggle="tab">
+                    {{ $ut->name }}s
+                </a>
+            @endforeach
+        </div>
+    </li>
+</ul>
+
 
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="new-user">

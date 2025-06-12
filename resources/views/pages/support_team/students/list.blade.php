@@ -9,7 +9,7 @@
         </div>
 
         <div class="card-body">
-            <ul class="nav nav-tabs nav-tabs-highlight">
+            {{-- <ul class="nav nav-tabs nav-tabs-highlight">
                 <li class="nav-item"><a href="#all-students" class="nav-link active" data-toggle="tab">All {{ $my_class->name }} Students</a></li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sections</a>
@@ -19,7 +19,70 @@
                         @endforeach
                     </div>
                 </li>
-            </ul>
+            </ul> --}}
+<ul class="nav nav-tabs nav-tabs-highlight" style="border-bottom: none;">
+  <li class="nav-item">
+    <a href="#all-students" class="nav-link active" data-toggle="tab"
+       style="
+         color: #0400ff;
+         border: 2px solid #9b99e5;
+         border-radius: 5px 5px 0 0;
+         padding: 8px 16px;
+         font-weight: 600;
+         box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(53, 122, 189, 0.3);
+         transition: all 0.2s ease;
+         display: inline-block;"
+       onmouseover="this.style.boxShadow='0 4px 0 #357ABD, 0 4px 12px rgba(53, 122, 189, 0.2)'"
+       onmouseout="this.style.boxShadow='0 6px 0 #357ABD, 0 6px 15px rgba(53, 122, 189, 0.3)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #357ABD, 0 2px 8px rgba(53, 122, 189, 0.15)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #357ABD, 0 4px 12px rgba(53, 122, 189, 0.2)'">
+      <i class="fa fa-users" style="margin-right: 8px;"></i>
+      All {{ $my_class->name }} Students
+    </a>
+  </li>
+
+  <li class="nav-item dropdown" style="position: relative;">
+    <a href="#" class="nav-link dropdown-toggle"
+       data-toggle="dropdown"
+       style="
+         color: #000000;
+         border: 2px solid #7d9ce4;
+         border-radius: 5px;
+         padding: 8px 16px;
+         font-weight: 600;
+         box-shadow: 0 6px 0 #357ABD, 0 6px 15px rgba(53, 122, 189, 0.3);
+         transition: all 0.2s ease;
+         display: inline-block;"
+       onmouseover="this.style.boxShadow='0 4px 0 #357ABD, 0 4px 12px rgba(53, 122, 189, 0.2)'"
+       onmouseout="this.style.boxShadow='0 6px 0 #357ABD, 0 6px 15px rgba(53, 122, 189, 0.3)'"
+       onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #357ABD, 0 2px 8px rgba(53, 122, 189, 0.15)'"
+       onmouseup="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 0 #357ABD, 0 4px 12px rgba(53, 122, 189, 0.2)'">
+      <i class="fa fa-layer-group" style="margin-right: 8px;"></i>
+      Sections
+    </a>
+
+    <div class="dropdown-menu dropdown-menu-right" style="border-radius: 0 0 5px 5px; padding: 0;">
+      @foreach($sections as $s)
+        <a href="#s{{ $s->id }}" class="dropdown-item" data-toggle="tab"
+           style="
+             color: #9f0000;
+             padding: 8px 16px;
+             border-bottom: 1px solid #ddd;
+             transition: all 0.2s ease;
+             box-shadow: 0 6px 0 #ffc400, 0 6px 15px rgba(53, 122, 189, 0.15);
+             border-radius: 0;"
+           onmouseover="this.style.backgroundColor='#e6f0ff'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 10px rgba(53, 122, 189, 0.3)'"
+           onmouseout="this.style.backgroundColor=''; this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 0 #357ABD, 0 6px 15px rgba(53, 122, 189, 0.15)'"
+           onmousedown="this.style.transform='translateY(2px)'; this.style.boxShadow='0 2px 0 #357ABD, 0 2px 8px rgba(53, 122, 189, 0.1)'"
+           onmouseup="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 10px rgba(53, 122, 189, 0.3)'">
+          <i class="fa fa-file" style="margin-right: 8px;"></i>
+          {{ $my_class->name.' '.$s->name }}
+        </a>
+      @endforeach
+    </div>
+  </li>
+</ul>
+
 
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="all-students">
