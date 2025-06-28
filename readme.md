@@ -1,6 +1,101 @@
- **professional and complete `README.md`** tailored for your `Laravel-School-Management-System` that includes **multi-role access** for **Superadmin, Admin, Teacher, Student, Parent, and Assistant**. This description highlights modular features, Laravel components, and extensible structure — suitable for both GitHub and portfolio/demo presentations.
+
+## 🎓 Laravel School Management System — Screenshot Gallery
+---
+
+### 🔐 Login / Authentication
+
+<p align="center">
+  <img src="https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-02%20135349.png?raw=true" width="600" alt="Login Page" />
+</p>
 
 ---
+
+### 🧑‍💼 Admin Dashboard & Management
+
+| Feature                    | Screenshot                                                                                                                                                                                                   |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Admin Home Dashboard       | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20123943%20-%20Copy.png?raw=true) |
+| Dashboard Charts & Reports | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20123943.png?raw=true)            |
+| Admin Navbar & Sidebar     | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124052.png?raw=true)            |
+
+---
+
+### 🏫 Class & Student Management
+
+| Feature           | Screenshot                                                                                                                                                                                        |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Add Student Form  | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124102.png?raw=true) |
+| Student List View | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124120.png?raw=true) |
+| Add Class         | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124130.png?raw=true) |
+| Class List        | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124138.png?raw=true) |
+| Add Section       | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124156.png?raw=true) |
+| Section List      | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124222.png?raw=true) |
+
+---
+
+### 📚 Subject & Teacher Management
+
+| Feature      | Screenshot                                                                                                                                                                                        |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Add Subject  | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124706.png?raw=true) |
+| Subject List | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124714.png?raw=true) |
+| Add Teacher  | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20124746.png?raw=true) |
+| Teacher List | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130048.png?raw=true) |
+
+---
+
+### 📝 Exams & Marks
+
+| Feature        | Screenshot                                                                                                                                                                                        |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Add Exam       | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130123.png?raw=true) |
+| Exam List      | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130131.png?raw=true) |
+| Add Marks      | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130139.png?raw=true) |
+| Marksheet View | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130223.png?raw=true) |
+
+---
+
+### 💳 Fee Collection & Attendance
+
+| Feature             | Screenshot                                                                                                                                                                                        |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fee Collection Form | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130313.png?raw=true) |
+| Fee List            | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130327.png?raw=true) |
+| Attendance Form     | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130344.png?raw=true) |
+| Attendance List     | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130358.png?raw=true) |
+
+---
+
+### 👥 User Management & Roles
+
+| Feature                           | Screenshot                                                                                                                                                                                        |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User List (Admin/Teacher/Student) | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130455.png?raw=true) |
+| Add Role                          | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130511.png?raw=true) |
+| Role List                         | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130528.png?raw=true) |
+
+---
+
+### ⚙️ Settings & Utilities
+
+| Feature                 | Screenshot                                                                                                                                                                                        |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| App Settings Panel      | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130538.png?raw=true) |
+| Backup/Restore          | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130614.png?raw=true) |
+| General Logs / Activity | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130724.png?raw=true) |
+| Logout Screen           | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130738.png?raw=true) |
+
+---
+
+### 📋 Final Report View
+
+| Report View          | Screenshot                                                                                                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Student Report Sheet | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-09%20130807.png?raw=true) |
+
+---
+
+
 
 # 🎓 Laravel School Management System (Khmer + English)
 
