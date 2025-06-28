@@ -10,7 +10,7 @@ This section showcases the authentication process from login to the main admin d
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1. Login Page** <br>Enter your username and password to access the system.                 | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-28%20165712.png?raw=true) |
 | **2. Successful Login Redirect** <br>The system verifies your credentials and grants access. | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-28%20165806.png?raw=true) |
-| **3. Admin Dashboard (Top View)** <br>Overview of system KPIs, stats, and quick actions.     | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-28%20165832.png?raw=true) |
+| **3. Admin Dashboard (Top View)** <br>Login to the system was unsuccessful..     | ![](https://github.com/Din-Rasin/-Laravel-based-School-Management-System-/blob/main/View%20Picture%20Demo%20Laravel%20School%20Management%20System/Screenshot%202025-06-28%20165832.png?raw=true) |
 
 ---
 
